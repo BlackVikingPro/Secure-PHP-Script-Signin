@@ -1,30 +1,14 @@
 # PHP Secure Script
-One page element used for basic, secure authentication using php.
+One page script collection used for basic, secure authentication using PHP.
 
-## One-Page
-This one is a very simple script in PHP, designed for speed and simplicity.
-This is useful for very small, password-protected areas on a website/webserver.
-** Not recommended for protecting sensitive material!!! **
+## Script-Specs:
+ * [Multi-Accounts](multi-accounts.php) - Supports multiple user:pass accounts.
+ * [Single-Pass-Auth](single-pass-auth.php) - Single master password, basic auth.
+ * [Improved Security](improved-sec.php) - Single master password, advanced security.
 
-## Added-Security
-This one is a bit more secure. Including Base64 encoding, sha1 hashing,
-and psuedorandom key generating. This one also includes an anti-brute-forcing
-system, designed to keep out people from dictionary attacks to guess the password.
--- This one is slightly more customizable, and easier to configure.
-Maintaining security, and focusing on nothing but security here.
-** Still not recommended for protecting extremely sensitive material. Maybe protecting an admin-panel or something**
+## Purpose
+This is a simple collection of one-page authentication scripts to protect any single page
+worth of PHP/HTML and whatever have you. These scripts are not designed for production, so I recommend against using them in such environment, as they may contain vulnerabilities or limitations that I'm not aware of. 
 
-
-Please know that these two scripts are not designed to protect against all types
-of web-based exploits. All types of attacks are still possible here. One could
-steal the session cookie from you, and they could gain access to it with only the
-session cookie (if it's still valid).
-
-There are also much more efficient ways to protect against brute-forcing and
-such, as even the code used simply bans the user based on a session variable.
-All the attacker would have to do is delete the cookie and keep retrying
-the password. Which can be accomplished in Python or something...
-
-> This project is still in development, but priority is limited. I only updated
-> this because it was requested.
->Please report bugs in the [Issues](https://github.com/BlackVikingPro/Secure-PHP-Script-Signin/issues) tab.
+## Issues
+As with all GitHub repositories, you may submit an [issue](https://github.com/BlackVikingPro/Secure-PHP-Script-Signin/issues/) detailing any bug/vuln findings or improvement recommendations. Also, feel free to [fork](http://github.com/BlackVikingPro/Secure-PHP-Script-Signin/fork) this project!

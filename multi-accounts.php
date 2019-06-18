@@ -1,4 +1,10 @@
 <?php
+/*
+ * Multi-Account One-Page PHP Authentication Script
+ * Created by Willy Fox (@BlackVikingPro)
+ * Last Updated - 6/18/2019
+ * Primary Repository - https://github.com/BlackVikingPro/Secure-PHP-Script-Signin/
+*/
 
 // Use this to easily get the hash of a password.
 if (isset($_GET['hash'])) { die(password_hash($_GET['hash'], PASSWORD_BCRYPT)); }
